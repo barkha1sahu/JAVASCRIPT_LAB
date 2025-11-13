@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Max and Min</title>
+    <style>
+      div {
+        padding: 0%;
+        text-align: center;
+      }
+      button {
+        background-color: #9f84b5;
+        color: white;
+        border: none;
+        padding: 10px 24px;
+        font-size: 16px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Find Maximum and Minimum in Array</h2>
+      <label>Enter numbers: </label>
+      <input type="text" id="numArray" placeholder="5, 10, 3" /><br /><br />
+      <button onclick="findMinMax()">Find</button>
+
+      <p id="result"></p>
+    </div>
+
+    <script>
+      function findMinMax() {
+        let input = document.getElementById("numArray").value;
+        let arr = input.split(",").map(Number);
+        let max = Math.max(...arr);
+        let min = Math.min(...arr);
+
+        document.getElementById("result").innerHTML =
+          "Maximum: " + max + "<br>Minimum: " + min;
+      }
+    </script>
+  </body>
+</html>
