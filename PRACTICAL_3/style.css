@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b9d5e6;
+  font-family: Arial, sans-serif;
+}
+
+h2,
+h4 {
+  text-align: center;
+  background-color: #475e3d;
+  color: #b9d5e6;
+  padding: 10px;
+}
+
+form {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.res,
+.grad {
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: rosybrown;
+  border: none;
+  cursor: pointer;
+}
+
+#result,
+#grade {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.marks-form {
+  margin-top: 5%;
+  text-align: center;
+  display: inline-block;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
